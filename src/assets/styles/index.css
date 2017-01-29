@@ -1,0 +1,163 @@
+/*
+* @Author: Administrator
+* @Date:   2017-01-22 14:30:20
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-01-28 18:07:54
+*/
+
+/*Header头部样式*/
+body{
+	background: #ebf0f0;
+}
+.Nav{
+	display: -webkit-flex; /* Safari */
+	display: flex;
+	font-size:18px;
+	height:60px;
+	line-height:60px;
+	text-align:'center';
+	flex-flow: row nowrap;
+	justify-content:center;
+}
+.NavItems{
+	order:0;
+	width: 200px;
+	text-align: center;
+}
+.icon-nav-logo {
+    width: 120px;
+    height: 60px;
+    font-size: 26px;
+    color: #fff;
+    font-weight: normal;
+    font-family: '微软雅黑';
+    text-align: center;
+}
+.SearchItems{
+	order:1;
+}
+.SignIn{
+	width:120px;
+	color:#fff;
+	font-size:13px;
+	order:2;
+	margin: 0 10px;
+	text-align: center;
+
+}
+.SignUp{
+	font-size:13px;
+	width:120px;
+	height: 40px;
+	line-height: 40px;
+	margin:10px 0;
+	color:#fff;
+	border:2px solid #fff;
+	border-radius:40px;
+	text-align: center;
+	order:2;
+}
+.SignUp:hover{
+	border:2px solid #49a9ee;
+}
+
+/*内容区css样式*/
+.main .Grid{
+	width:1200px;
+	padding-top:20px;
+	padding-bottom: 40px;
+	display: -webkit-flex; /* Safari */
+	display: flex;
+	flex-flow:row nowrap;
+	justify-content:center;
+	margin: 0 auto;
+}
+.Grid-cell {
+  flex: 1;
+}
+.Grid-cell.u-full {
+  flex: 0 0 100%;
+}
+
+.Grid-cell.u-1of2 {
+  flex: 0 0 33.3333%;
+}
+
+.mainLeft{
+	margin-right: 20px;
+	padding: 15px;
+}
+
+/*文章列表样式*/
+.postTitle{
+	color: #1D1D1F;
+	font-size: 20px;
+	font-family:sans-serif;
+	line-height: 1.2em;
+}
+.metaItem{
+	font-size: 10px;
+}
+.arc_cont{
+	color: #1D1D1F;
+	font-family:sans-serif;
+    line-height: 20px;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    word-wrap: break-word;
+}
+
+.tar{
+	padding-top: 0.01em;
+    padding-bottom: 0.01em;
+    cursor: pointer;
+    color: -webkit-link;
+    font-size: 20px;
+    text-align: right;
+}
+/*文章列表样式结束*/
+
+/*推荐文章样式*/
+.mainRight{
+}
+.card{
+	flex:none;
+	bordered:true;
+}
+
+
+.about{
+	width:1200px;
+	padding-top:20px;
+	padding-bottom: 40px;
+	display: -webkit-flex; /* Safari */
+	display: flex;
+	flex-flow:row nowrap;
+	justify-content:flex-start;
+	margin: 0 auto;
+}
+/*登录框样式*/
+.login-form {
+  max-width: 300px;
+  width:400px;
+}
+.login-form-forgot {
+  float: right;
+}
+.login-form-button {
+  width: 300px;
+}
+/*注册框样式*/
+.icp-selector {
+  width: 300px;
+}
+
+/*底部区域css样式*/
+.footer{
+	width:1200px;
+	padding:20px;
+	justify-content:center;
+	margin: 0 auto;
+	text-align: center;
+}
+

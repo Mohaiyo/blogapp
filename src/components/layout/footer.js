@@ -2,8 +2,8 @@ import React,{ Component } from 'react';
 class Footer extends Component{
 	render(){
 		return(
-			<div>
-			文章底部
+			<div className='footer'>
+				Copyright © 2017 Ohaiyo Design By Ohaiyo!
 			</div>
 			)
 	}

@@ -1,43 +1,19 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { DeleteName,AddName } from './redux/action/action';
-import { Header,Footer,Sidebar } from './components/index';
+import { Header,Footer } from './components/index';
 import 'antd/dist/antd.css';
+import './assets/styles/index.css';
+
 
 class App extends Component {
- 
- state={
-   changename:null,  // 定义初始的state
- }
-
- handdleaddname(name){
-   const data = this.props.lists;
-   console.log(data);
-   const listname = data.name;
-   listname.push(name);
-   this.props.dispatch(AddName(listname));
- }
- handdledeletename(name){
-   const data = this.props.lists;
-   const listname = data.deletename;
-   listname.push(name);
-   this.props.dispatch(DeleteName(listname));
- }
- changeName(name){
-   this.setState({
-      changename:name
-   })
- }
   render() {
-    const data = this.props.lists;
     return (
       <div >
-        <Header />
-         <div>
-          { this.props.children } 
-          <Sidebar />
-         </div>
-        <Footer />
+        <Header />{/*头部*/}
+         <div className='main'>{/*内容区开始*/}
+          { this.props.children }
+         </div>{/*内容区结束始*/}
+        <Footer />{/*底部*/}
       </div>
     );
   }

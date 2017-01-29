@@ -1,6 +1,4 @@
 import { createStore, combineReducers } from 'redux';
-import { browserHistory } from 'react-router';
-import assign from 'object-assign';
 import listReducer from './redux/reducer/lists';
 import itemReducer from './redux/reducer/items';
 
@@ -20,7 +18,7 @@ store.subscribe(() => {
   const state = store.getState();
   const name=state.lists.name;
   const isaddname=state.lists.isaddname;
-  if(name.length>0&&isaddname==false){
+  if(name.length>0&&isaddname===false){
   	console.log(name);
   	 store.dispatch({
   	 	type:'CHANGE_NAME_YET',
